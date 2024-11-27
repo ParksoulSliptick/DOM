@@ -55,7 +55,67 @@ console.log("Valores en linea" + "Color:" + titulo.style.color + "- Fondo: " + t
 
 /*
 
-Commit "Acceso a estilos con JavaScript"
+Metodo de propiedad 
+
+Asignar el valor de la propiedad de estilo en el elemento seleccionado seleccionado
+
+  elemento.style.nombrePropiedad = "Valor"
+
+  Forma mas directa y legible de asignar propiedades
+  Solo admite asignar propiedades con formato camelCase
 
 */
+
+titulo.style.color = "orange"
+titulo.style.backgroundColor = "gray"
+
+console.log("Valores asignados con JavaScript" + "Color:" + titulo.style.color + "- Fondo: " + titulo.style.backgroundColor)
+
+
+/*
+
+Metodo setProperty()
+
+Asignamos una propiedad de estilo al elemento seleccionado
+
+  elemento.style.setPrperty(nombrePropiedad, valor, important)
+
+  Mas flexible y poderoso
+  Las propiedades se escriban en formato kebab-case
+  Parametro "important" es opcional
+
+*/
+
+titulo.style.setProperty("color", "darkblue");
+titulo.style.setProperty("backgroundColor", "gray", "important");
+
+console.log("Valores asignados con setProperty" + "Color:" + titulo.style.color + "- Fondo: " + titulo.style.backgroundColor)
+
+/*
+
+Eliminar valores de propiedad
+
+Usamos el metodo de propiedad y le definimos una cadena de texto vacia
+
+  elemento.style.nombrePropiedad = ""
+
+  Esto termina los valores previamente definidos en JS y en los estilos en linea 
+
+*/
+
+titulo.style.color = "";
+titulo.style.backgroundColor = "";
+
+/*
+
+Metodo removeProperty()
+
+Esto elimina la propiedad de estilo
+
+  elemento.style.removeProperty(nombrePropiedad)
+
+*/
+
+titulo.style.removeProperty("color");
+titulo.style.removeProperty("backgroundColor");
 
