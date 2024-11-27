@@ -4,5 +4,5 @@ html{
 
 .titulo{
     color: red;
-    background-color: darkslateblue;
+    background-color: darkslateblue !important; 
 }
