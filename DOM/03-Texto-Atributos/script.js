@@ -90,3 +90,60 @@ elemento.textContent = "<tag>...</tag>"
 
 titulo.innerHTML = "¡Amigos <span>Pokemones</span>!";
 lista.innerHTML = "<li>Snorlax</li> <li>Meow</li>";
+
+
+/*
+
+getAttribute()
+
+Devuelve el valor del elemento que indicamos
+
+elemento.getAttribute(atributo)
+
+*/
+
+const enlace = document.getElementsByTagName("a");
+
+console.log(enlace[0].getAttribute("href"))
+
+/*
+
+removeAttribute()
+
+Eliminar el valor del atributo  de um elemento
+
+    elemento.removeAttribute(atributo)
+
+*/
+
+enlace[0].removeAttribute("href");
+
+console.log(enlace[0].getAttribute("href"));
+
+
+/*
+
+setAttribute()
+
+Asigna un atributo y un valor a un elemento
+
+    elemento.setAttribute(atributo, valor)
+
+    Sobreecribir un atributo ya declarado
+    Crear un nueno atributo y un valor
+
+*/
+
+enlace[0].setAttribute("href", "https://www.youtube.com/watch?v=rQuv8b-IYt0&list=LL&index=3");
+
+console.log(enlace[0].getAttribute("href"));
+
+/* Antes */
+
+console.log(enlace[0].getAttribute("target"));
+
+enlace[0].setAttribute("target", "_blank");
+
+/* Despues */
+
+console.log(enlace[0].getAttribute("target"));
