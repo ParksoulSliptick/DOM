@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    padding: 24px;
+}
+
+.subtitle{
+    margin-bottom: 24px;
+}
+
+.list{
+    list-style: none;
+    color: aqua;
+}
+
+.list-item{
+    padding: 12px 8px;
+    color: whitesmoke;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.bg-one{
+    background-color: blueviolet;
+}
+
+.bg-one:hover{
+    background-color: darkmagenta;
+}
+
+.bg-two{
+    background-color:teal;
+}
+
+.bg-two:hover{
+    background-color:darkblue;
+}
+
+.bg-three{
+background-color: brown;
+}
+
+.bg-three:hover{
+    background-color: darkred;
+    }
+
+.bg-four{
+    background-color: green;
+ }
+        
+.bg-four:hover{
+background-color: darkolivegreen;
+}
+
+.bg-five{
+background-color: orange;
+}
+
+.bg-five:hover{
+    background-color: orangered;
+    }
+
