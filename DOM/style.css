@@ -1,0 +1,23 @@
+body{
+    color: whitesmoke;
+    font-family: sans-serif;
+    background-color: blue;
+}
+
+button{
+    border: none;
+    border-radius: 1rem;
+    width: 200px;
+    height: 60px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all .300s ease;
+}
+
+button:hover{
+    background-color: brown;
+    box-shadow: 8px 8px 0 0 black;
+}
