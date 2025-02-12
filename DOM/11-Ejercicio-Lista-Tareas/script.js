@@ -6,12 +6,10 @@ const taskList = document.getElementById('taskList');
 
 //Escuchador 
 
-addButton.addEventListener('click', () => {
-    console.log(taskInput.value);
-});
+addButton.addEventListener('click', createTask);
 
 function createTask () {
-    if((taskInput.value = true)){
+    if((taskInput.value))
 
     console.log(taskInput.value);
 
@@ -34,11 +32,13 @@ function createTask () {
     taskItem.append(taskText, taskIcons);
     taskList.append(taskItem);
 
-    taskInput.value = '';
-    } else {
-      alert('Epa ahi si le entendi');
-    }
-}
+    iconCheck.addEventListener('click', (e) => {
+      e.target.parentNode.parentNode.classList.toggle('complete');
+    });
 
-const taskItem = document.createElement('div');
-taskItem.classList.add('task');
+    taskInput.addEventListener ('keydown', (e) =>
+    {
+      if (e.key === 'Enter') {
+        createTask();
+      }
+    })}
